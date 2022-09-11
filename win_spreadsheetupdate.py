@@ -41,6 +41,7 @@ while True:
                 #Atualiza a coluna de status da linha indicada de AGUARDANDO para OK
                 sheet.update_cell(att_x, 4, 'OK')
         #Fecha o documento TXT
+        sg.popup('Atualização concluida !')
         arquivo.close()
     else:
         sg.popup('Você precisa preencher todos os campos para continuar',title='Preencha todos os campos',button_color='red')
